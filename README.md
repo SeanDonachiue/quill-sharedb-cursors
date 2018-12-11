@@ -1,3 +1,7 @@
+Work in progress concurrent document editing web app for a local english tutor.
+
+# Below is from the original readme of the forked quill-sharebd-cursors project by pedrosanta, on which this project builds
+  - @sgdonachiue
 # Quill-ShareDB-Cursors
 An attempt at multi cursors sync in a collaborative editing scenario using [Quill](https://quilljs.com/), a [ShareDB](https://github.com/share/sharedb) backend, and the [reedsy/quill-cursors](https://github.com/reedsy/quill-cursors) Quill module. For more info on each component, check their pages/repositories.
 
