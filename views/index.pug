@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  .layout
+    .info-container
+      h3 Sockets
+      p
+        strong ShareDB:
+        |  
+        span#sharedb-socket-indicator.socket-indicator
+        span#sharedb-socket-state.socket-state
+      p
+        strong Cursors:
+        |  
+        span#cursors-socket-indicator.socket-indicator
+        span#cursors-socket-state.socket-state
+
+      #connect-panel
+        h3 Username
+        form#username-form
+          | Set your username and connect to edit:
+          br
+          input#username-input(type='text')
+          br
+          button#connect-btn(type='button') Connect
+      #users-panel
+        h3 Users editing
+        ul#users-list
+    .editor-container
+      #editor
+  .archive-container#archive
+    input#title-input(type='text')
+    button#newpost(type='button') New Blank Doc
+    ul#post-list

@@ -1,6 +1,7 @@
 body {
-  padding: 50px;
+  padding: 10px;
   font: 13px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
 }
 
 a {
@@ -28,20 +29,39 @@ button#connect-btn {
 
 .layout {
   display: flex;
+  flex-direction: column;
+  margin: 0;
+  overflow: hidden;
 }
 
 .info-container {
-  width: 20%;
+  display: flex;
+  width: 100%;
   min-width: 150px;
-  margin-right: 50px;
+  margin: auto;
+  margin-top: 0;
 }
-
 .editor-container {
-  width: 80%;
+  min-width: 66vw;
+  max-width: 66vw;
+  height: 75vh;
+  margin: auto;
 }
-
+#editor {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+#editor .ql-editor {
+  font-size: 18px;
+  margin: 50px;
+  overflow: visible;
+}
+#connect-panel {
+  display: flex;
+}
 #users-panel {
-  display: none;
+  display: flex;
 }
 
 #users-panel ul {
@@ -80,4 +100,21 @@ button#connect-btn {
 
 .socket-state {
   text-transform: capitalize;
+}
+
+.archive-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.archive-container ul {
+  list-style: none;
+}
+.archive-container ul > li {
+  colour: grey;
+  border-radius: 5px;
+}
+
+#post-list .post-preview > div {
+  flex-grow: 1;
 }
